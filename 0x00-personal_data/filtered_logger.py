@@ -18,7 +18,12 @@ patterns = {
 PII_FIELDS = ("name", "email", "phone", "ssn", "password")
 
 
-def filter_datum(fields: List[str], redaction: str, message: str, separator: str) -> str:
+def filter_datum(
+    fields: List[str],
+    redaction: str,
+    message: str,
+    separator: str
+    ) -> str:
     """
     :param fields: a list of strings representing all fields to obfuscate
     :param redaction: a string representing by what the field will be obfuscated
